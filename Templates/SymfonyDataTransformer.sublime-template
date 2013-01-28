@@ -1,0 +1,47 @@
+<snippet>
+    <content><![CDATA[<?php
+
+namespace ${1:VendorName}\Bundle\\${2:BundleName}Bundle\Form\DataTransformer;
+
+use Symfony\Component\Form\DataTransformerInterface;
+use Symfony\Component\Form\Exception\UnexpectedTypeException;
+use Symfony\Component\Form\Exception\TransformationFailedException;
+
+class ${3:TransformerName}Transformer implements DataTransformerInterface
+{
+    /**
+     * Transforms a value from the original representation to a transformed representation.
+     *
+     * @param  mixed \$value              The value in the original representation
+     *
+     * @return mixed                     The value in the transformed representation
+     *
+     * @throws UnexpectedTypeException   when the argument is not a string
+     * @throws TransformationFailedException  when the transformation fails
+     */
+    public function transform(\$value)
+    {
+        ${0}
+    }
+
+    /**
+     * Transforms a value from the transformed representation to its original
+     * representation.
+     *
+     * @param  mixed \$value              The value in the transformed representation
+     *
+     * @return mixed                     The value in the original representation
+     *
+     * @throws UnexpectedTypeException   when the argument is not of the expected type
+     * @throws TransformationFailedException  when the transformation fails
+     */
+    public function reverseTransform(\$value)
+    {
+
+    }
+}
+]]></content>
+    <extensions>php</extensions>
+    <title>Symfony2 Form Data Transformer</title>
+    <description>Creates a Symfony2 DataTransformer</description>
+</template>

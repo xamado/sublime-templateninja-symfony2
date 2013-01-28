@@ -1,0 +1,25 @@
+<template>
+    <content><![CDATA[<?php
+
+namespace ${1:VendorName}\\Bundle\\${2:BundleName}Bundle\\Controller;
+
+use Symfony\\Bundle\\FrameworkBundle\\Controller\\Controller;
+use Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Route;
+use Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Template;
+
+class ${3:ControllerName}Controller extends Controller
+{
+    /**
+     * @Route(${4:route configuration})
+     * @Template
+     */
+    public function ${5:index}Action()
+    {
+        ${0}
+    }
+}
+]]></content>
+    <extensions>php</extensions>
+    <title>Symfony2 Controller Annotated</title>
+    <description>Creates an empty Symfony2 Controller with annotations</description>
+</template>
